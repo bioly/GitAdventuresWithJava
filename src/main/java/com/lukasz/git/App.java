@@ -17,7 +17,8 @@ public class App
                 new Furniture("Old Clock", 200),
                 new Furniture("Lamp", 100),
                 new Furniture("Bed", 450),
-                new Furniture("Picture", 500)
+                new Furniture("Picture", 500),
+					new Furniture("Tea pod", 23)
         );
 
         System.out.println("Print furniture using declarative approach: ");
