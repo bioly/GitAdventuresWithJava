@@ -2,6 +2,7 @@ package com.lukasz.git;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Hello world!
@@ -24,5 +25,10 @@ public class App
 
         System.out.println("Print furniture using declarative approach: ");
         furniture.forEach(System.out::println);
+
+        System.out.println("Filter out the ones which are more expensive than 300:" +
+                furniture.stream()
+                        .filter(f -> f.getPrice() > 300)
+                        .collect(Collectors.toList()));
     }
 }
